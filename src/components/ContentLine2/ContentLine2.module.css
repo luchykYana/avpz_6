@@ -1,0 +1,44 @@
+.d_flex {
+    display: flex;
+}
+
+.w_50 {
+    width: 50px;
+}
+
+.w_300 {
+    width: 300px;
+}
+
+.w_200 {
+    width: 220px;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.content_line {
+    background-color: var(--yellow);
+    font-size: 20px;
+    height: 80px;
+    box-shadow: black 3px 3px 10px;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    height: 30px;
+    width: 90px;
+    font-size: 16px;
+    margin: 0 5px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+}

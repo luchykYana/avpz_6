@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import {Route, Routes} from 'react-router';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import {Layout} from './components';
+import {CriteriaPage, EvaluationCriteriaPage, EvaluationsPage, FirstPage, SoftwareQualityPage} from './pages';
 
-export default App;
+import css from './App.module.css';
+
+const App = () => {
+    return (
+        <Routes>
+            <Route path={'/'} element={<Layout/>}>
+                <Route index element={<FirstPage/>}/>
+                <Route path={'criteria'} element={<CriteriaPage/>}/>
+                <Route path={'evaluation'} element={<EvaluationsPage/>}/>
+                <Route path={'evaluation-criteria'} element={<EvaluationCriteriaPage/>}/>
+                <Route path={'software-quality'} element={<SoftwareQualityPage/>}/>
+            </Route>
+        </Routes>
+    );
+};
+
+export {App};

@@ -1,0 +1,38 @@
+.d_flex {
+    display: flex;
+}
+
+.user_content_line {
+    background-color: var(--yellow);
+    font-size: 20px;
+    height: 80px;
+    box-shadow: black 3px 3px 10px;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 5px;
+}
+
+.w_30 {
+    width: 30px;
+}
+
+.w_40 {
+    width: 50px;
+}
+
+.w_60 {
+    width: 60px;
+}
+
+.w_70 {
+    width: 70px;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.justify_center {
+    justify-content: center;
+}

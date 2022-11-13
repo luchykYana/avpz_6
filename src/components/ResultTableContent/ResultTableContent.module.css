@@ -1,0 +1,28 @@
+.d_flex {
+    display: flex;
+}
+
+.content_line {
+    background-color: var(--yellow);
+    font-size: 20px;
+    height: 80px;
+    box-shadow: black 3px 3px 10px;
+    margin: 20px auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.w_40 {
+    width: 40px;
+}
+
+.w_200 {
+    width: 175px;
+}
+
+.w_300 {
+    width: 300px;
+}
+.text_center {
+    text-align: center;
+}
